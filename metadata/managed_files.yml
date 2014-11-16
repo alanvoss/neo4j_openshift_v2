@@ -11,5 +11,17 @@ locked_files:
 - metadata/*
 - conf/
 - conf/*
+- conf/neo4j/
+- conf/neo4j/*
 processed_templates:
-- '**/*.erb'
+- 'conf/neo4j/logging.properties.erb'
+- 'conf/neo4j/neo4j-wrapper.conf.erb'
+- 'conf/neo4j/neo4j-http-logging.xml.erb'
+- 'conf/neo4j/neo4j-server.properties.erb'
+- 'env/JAVA_HOME.erb'
+- 'env/PATH.erb'
+- 'env/OPENSHIFT_NEO4J_STATE.erb'
+- 'env/NEO4J_HOME.erb'
+- 'env/JDK_HOME.erb'
+- 'env/NEO4J_DATA_DIR.erb'
+- 'env/NEO4J_CONF_DIR.erb'
