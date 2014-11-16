@@ -6,7 +6,9 @@ function start {
   echo "Starting Neo4j cartridge"
   touch $OPENSHIFT_NEO4J_STATE/control_start
   touch $OPENSHIFT_NEO4J_STATE/mock_process
+  client_result "about to start the server"
   neo4j start > $OPENSHIFT_NEO4J_DIR/data/log/server.log 2>&1 &
+  client_result "started the server"
 }
 
 function stop {
