@@ -9,6 +9,5 @@ locked_files:
 - hooks/*
 - metadata/
 - metadata/*
-- usr/lib/java
 processed_templates:
 - '**/*.erb'
