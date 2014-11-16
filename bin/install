@@ -31,4 +31,4 @@ client_result "Neo4j ${version} database added."
 #client_result "   Root Password: $password"
 #client_result "   Database Name: $OPENSHIFT_APP_NAME"
 #client_result ""
-client_result 'Connection URL: http://$OPENSHIFT_NEO4J_HOST:$OPENSHIFT_NEO4J_PORT/'
+client_result 'Connection URL: http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/'
