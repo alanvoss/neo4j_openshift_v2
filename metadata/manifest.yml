@@ -23,6 +23,18 @@ Cart-Data:
 - Key: connection_url
   Type: cart_data
   Description: Neo4j DB connection URL
+- Key: CLASSPATH
+  Type: environment 
+  Description: The JAVA CLASSPATH
+- Key: JDK_HOME
+  Type: environment 
+  Description: The JDK_HOME - really just here to appease the Jasper paths
+- Key: NEO4J_DATA_DIR
+  Type: environment 
+  Description: The directory where graph data is stored
+- Key: OPENSHIFT_NEO4J_STATE
+  Type: environment 
+  Description: The state directory
 - Key: JAVA_HOME
   Type: environment 
   Description: Java home directory
@@ -35,15 +47,6 @@ Cart-Data:
 - Key: PATH
   Type: environment 
   Description: The PATH
-- Key: JDK_HOME
-  Type: environment 
-  Description: The JDK_HOME - really just here to appease the Jasper paths
-- Key: NEO4J_DATA_DIR
-  Type: environment 
-  Description: The directory where graph data is stored
-- Key: OPENSHIFT_NEO4J_STATE
-  Type: environment 
-  Description: The state directory
 Suggests:
 Provides:
 - neo4j
@@ -60,4 +63,4 @@ Endpoints:
   Private-Port: 7474
   Public-Port-Name: DB_PROXY_PORT
   Protocols:
-  - https
+  - http

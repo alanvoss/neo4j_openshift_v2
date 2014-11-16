@@ -21,6 +21,10 @@ touch $OPENSHIFT_NEO4J_STATE/install_succeed
 
 echo "http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/" > $OPENSHIFT_NEO4J_DIR/env/OPENSHIFT_NEO4J_DB_URL
 
+ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/lib ${OPENSHIFT_NEO4J_DIR}/lib
+ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/plugins ${OPENSHIFT_NEO4J_DIR}/plugins
+ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/system ${OPENSHIFT_NEO4J_DIR}/system
+
 cart_props 'connection_url=http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/'
 
 client_result ""
