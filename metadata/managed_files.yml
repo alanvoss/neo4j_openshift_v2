@@ -13,9 +13,6 @@ locked_files:
 - hooks/*
 - metadata/
 - metadata/*
-- lib
-- plugins
-- system
 processed_templates:
 - 'conf/logging.properties.erb'
 - 'conf/neo4j-http-logging.xml.erb'
