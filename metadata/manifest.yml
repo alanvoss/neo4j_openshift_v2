@@ -22,7 +22,28 @@ Help-Topics:
 Cart-Data:
 - Key: connection_url
   Type: cart_data
-  Description: Mongo DB connection URL
+  Description: Neo4j DB connection URL
+- Key: JAVA_HOME
+  Type: environment 
+  Description: Java home directory
+- Key: NEO4J_CONF_DIR
+  Type: environment 
+  Description: Configuration directory for Neo4j
+- Key: NEO4J_HOME
+  Type: environment 
+  Description: The home directory for Neo4j files and binaries
+- Key: PATH
+  Type: environment 
+  Description: The PATH
+- Key: JDK_HOME
+  Type: environment 
+  Description: The JDK_HOME - really just here to appease the Jasper paths
+- Key: NEO4J_DATA_DIR
+  Type: environment 
+  Description: The directory where graph data is stored
+- Key: OPENSHIFT_NEO4J_STATE
+  Type: environment 
+  Description: The state directory
 Suggests:
 Provides:
 - neo4j
