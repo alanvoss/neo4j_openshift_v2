@@ -18,7 +18,7 @@ Categories:
 - web_framework
 Website: http://www.neo4j.com
 Help-Topics:
-  http://www.neo4j.com/docs
+  "Neo4j website": http://www.neo4j.com/docs
 Cart-Data:
 - Key: connection_url
   Type: cart_data
@@ -62,5 +62,5 @@ Endpoints:
   Private-Port-Name: DB_PORT
   Private-Port: 7474
   Public-Port-Name: DB_PROXY_PORT
-  Protocols:
-  - http
+  Mappings:
+  - Options: { "websocket": true }
