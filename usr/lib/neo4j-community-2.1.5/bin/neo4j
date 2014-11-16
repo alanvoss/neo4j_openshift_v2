@@ -46,7 +46,7 @@ function findBaseDirAndCdThere {
 #    cd "$(dirname "$SCRIPT")"
 #    SCRIPT=`basename "$SCRIPT"`
 #  done
-#  NEO4J_HOME=`cd $( dirname "$SCRIPT" )/.. && dirs -l +0`
+  NEO4J_HOME=`cd $( dirname "$SCRIPT" )/.. && dirs -l +0`
   NEO4J_INSTANCE=$NEO4J_HOME
   NEO4J_CONFIG=$NEO4J_INSTANCE/conf
   NEO4J_LOG=$NEO4J_INSTANCE/data/log
