@@ -2,7 +2,8 @@
 snapshot_exclusions:
 locked_files:
 - bin/
-- bin/*
+- bin/control
+- bin/install
 - conf/
 - conf/*
 - conf/ssl/
