@@ -13,6 +13,7 @@ function start {
 
 function stop {
   echo "Stopping Neo4j cartridge"
+  client_result "about to stop the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_stop
   rm -f $OPENSHIFT_NEO4J_STATE/mock_process
   neo4j stop
@@ -20,17 +21,20 @@ function stop {
 
 function restart {
 #  touch $OPENSHIFT_NEO4J_STATE/control_restart
+  client_result "about to restart the server"
   neo4j restart
 }
 
 function status {
   client_result "This is client status output from the neo4j cartridge"
+  client_result "about to status the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_status
   neo4j status
 }
 
 function build {
   echo "Building Neo4j cartridge"
+  client_result "about to build the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_build
   echo "Neo4j successfully built."
 }
