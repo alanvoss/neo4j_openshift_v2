@@ -37,6 +37,4 @@ client_result "Neo4j ${version} database added."
 #client_result "   Database Name: $OPENSHIFT_APP_NAME"
 #client_result ""
 client_result "Connection URL: http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/"
-
-cd $OPENSHIFT_NEO4J_DIR/lib
-client_result `ls -l`
+client_result $(ls -l $OPENSHIFT_NEO4J_DIR/bin/neo4j)
