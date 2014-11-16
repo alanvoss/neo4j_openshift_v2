@@ -2,8 +2,8 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
-function start {
-  echo "Starting Neo4j cartridge"
+function start() {
+#  echo "Starting Neo4j cartridge"
 #  touch $OPENSHIFT_NEO4J_STATE/control_start
 #  touch $OPENSHIFT_NEO4J_STATE/mock_process
   client_result "about to start the server"
@@ -11,7 +11,7 @@ function start {
   client_result "started the server"
 }
 
-function stop {
+function stop() {
   echo "Stopping Neo4j cartridge"
   client_result "about to stop the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_stop
@@ -19,20 +19,20 @@ function stop {
   neo4j stop
 }
 
-function restart {
+function restart() {
 #  touch $OPENSHIFT_NEO4J_STATE/control_restart
   client_result "about to restart the server"
   neo4j restart
 }
 
-function status {
+function status() {
   client_result "This is client status output from the neo4j cartridge"
   client_result "about to status the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_status
   neo4j status
 }
 
-function build {
+function build() {
   echo "Building Neo4j cartridge"
   client_result "about to build the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_build
