@@ -1,7 +1,6 @@
 ---
 Name: neo4j
 Cartridge-Short-Name: NEO4J
-Source-Url: git://github.com:alanvoss/neo4j_openshift_v2.git
 Display-Name: Neo4j 2.1.5
 Description: Neo4j is the world's leading graph database.
 Version: '2.1.5'
