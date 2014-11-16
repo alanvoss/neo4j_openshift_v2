@@ -24,6 +24,7 @@ echo "http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/" > $OPENSHIFT_NE
 ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/lib ${OPENSHIFT_NEO4J_DIR}/lib
 ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/plugins ${OPENSHIFT_NEO4J_DIR}/plugins
 ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/system ${OPENSHIFT_NEO4J_DIR}/system
+ln -s ${OPENSHIFT_NEO4J_DIR}/usr/lib/neo4j/bin/neo4j ${OPENSHIFT_NEO4J_DIR}/bin/neo4j
 
 cart_props 'connection_url=http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/'
 
