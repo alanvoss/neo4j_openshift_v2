@@ -1,0 +1,41 @@
+---
+Name: neo4j
+Cartridge-Short-Name: NEO4J
+Display-Name: Neo4j 2.1.5
+Description: Neo4j is the world's leading graph database.
+Version: '2.1.5'
+Versions:
+- '2.1.5'
+Cartridge-Version: 0.1
+Cartridge-Vendor: alanvoss
+License: ASL 2.0
+Vendor: Alan Voss
+Categories:
+- service
+- database
+- nosql
+- embedded
+Website: http://www.neo4j.com
+Help-Topics:
+  http://www.neo4j.com/docs
+Cart-Data:
+- Key: connection_url
+  Type: cart_data
+  Description: Mongo DB connection URL
+Suggests:
+Provides:
+- neo4j
+- neo4j-2.1.5
+Publishes:
+  publish-nosql-db-connection-info:
+    Type: ENV:NET_TCP:nosqldb:connection-info
+Scaling:
+  Min: 1
+  Max: 1
+Endpoints:
+- Private-IP-Name: DB_HOST
+  Private-Port-Name: DB_PORT
+  Private-Port: 7474
+  Public-Port-Name: DB_PROXY_PORT
+  Protocols:
+  - https

@@ -1,0 +1,14 @@
+---
+snapshot_exclusions:
+locked_files:
+- bin/
+- bin/*
+- env/
+- env/*
+- hooks/
+- hooks/*
+- metadata/
+- metadata/*
+- usr/lib/java
+processed_templates:
+- '**/*.erb'
