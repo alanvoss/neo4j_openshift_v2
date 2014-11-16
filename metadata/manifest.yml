@@ -62,5 +62,3 @@ Endpoints:
   Private-Port-Name: DB_PORT
   Private-Port: 7474
   Public-Port-Name: DB_PROXY_PORT
-  Mappings:
-  - Options: { "websocket": true }
