@@ -7,7 +7,7 @@ function start() {
 #  touch $OPENSHIFT_NEO4J_STATE/control_start
 #  touch $OPENSHIFT_NEO4J_STATE/mock_process
   client_result "about to start the server"
-  neo4j start > $OPENSHIFT_NEO4J_DIR/data/log/server.log 2>&1 &
+#  neo4j start > $OPENSHIFT_NEO4J_DIR/data/log/server.log 2>&1 &
   client_result "started the server"
 }
 
@@ -16,13 +16,13 @@ function stop() {
   client_result "about to stop the server"
 #  touch $OPENSHIFT_NEO4J_STATE/control_stop
   rm -f $OPENSHIFT_NEO4J_STATE/mock_process
-  neo4j stop
+#  neo4j stop
 }
 
 function restart() {
 #  touch $OPENSHIFT_NEO4J_STATE/control_restart
   client_result "about to restart the server"
-  neo4j restart
+#  neo4j restart
 }
 
 function status() {
