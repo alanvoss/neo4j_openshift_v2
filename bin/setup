@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+source $OPENSHIFT_CARTRIDGE_SDK_BASH
+
+client_result "nothing to do in setup"
