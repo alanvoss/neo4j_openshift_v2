@@ -26,7 +26,7 @@ ln -s $OPENSHIFT_NEO4J_DIR/usr/lib/neo4j/plugins $OPENSHIFT_NEO4J_DIR/plugins
 ln -s $OPENSHIFT_NEO4J_DIR/usr/lib/neo4j/system $OPENSHIFT_NEO4J_DIR/system
 ln -s $OPENSHIFT_NEO4J_DIR/usr/lib/neo4j/bin/neo4j $OPENSHIFT_NEO4J_DIR/bin/neo4j
 
-cart_props 'connection_url=http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/'
+cart_props "connection_url=http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/"
 
 client_result ""
 #client_result "Neo4j ${version} database added.  Please make note of these credentials:"
@@ -36,4 +36,4 @@ client_result "Neo4j ${version} database added."
 #client_result "   Root Password: $password"
 #client_result "   Database Name: $OPENSHIFT_APP_NAME"
 #client_result ""
-client_result 'Connection URL: http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/'
+client_result "Connection URL: http://$OPENSHIFT_NEO4J_DB_HOST:$OPENSHIFT_NEO4J_DB_PORT/"
